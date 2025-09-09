@@ -58,7 +58,7 @@ void task4()
     {
         suffix = "-th";
     }
-    std::cout << "Vasya will in " << res << suffix << " km of MKAD";
+    std::cout << "Vasya will in " << res << suffix << " km of MKAD\n";
 }
 
 void task5()
@@ -88,4 +88,5 @@ int main()
     std::cout << "\n";
     std::cout << "- Ex 5\n";
     task5();
+
 }
