@@ -2,7 +2,6 @@
 #include <string>
 #include <cmath>
 
-
 int get_integer()
 {
   int x;
@@ -16,24 +15,24 @@ void task1()
 {
     int a = get_integer();
     int b = get_integer();
-    std::cout << "A + B = " << a + b << '\n';
+    std::cout << "A + B = " << a + b << "\n\n";
 }
 
 void task2()
 {
     int a = get_integer();
     int b = get_integer();
-    std::cout << "A + B = " << a + b << '\n';
-    std::cout << "A - B = " << a - b << '\n';
-    std::cout << "A * B = " << a * b << '\n';
-    std::cout << "A / B = " << a / b << '\n';
+    std::cout << "A + B = " << a + b << "\n";
+    std::cout << "A - B = " << a - b << "\n";
+    std::cout << "A * B = " << a * b << "\n";
+    std::cout << "A / B = " << a / b << "\n\n";
 }
 
 void task3()
 {
     int a = get_integer();
     int b = get_integer();
-    std::cout << "c = " << pow(pow(a, 2) + pow(b, 2), 0.5) << "\n";
+    std::cout << "c = " << pow(pow(a, 2) + pow(b, 2), 0.5) << "\n\n";
 }
 
 void task4()
@@ -58,7 +57,7 @@ void task4()
     {
         suffix = "-th";
     }
-    std::cout << "Vasya will in " << res << suffix << " km of MKAD\n";
+    std::cout << "Vasya will in " << res << suffix << " km of MKAD\n\n";
 }
 
 void task5()
@@ -68,7 +67,7 @@ void task5()
     h = n / 3600;
     m = n / 60 - h * 60;
     s = n % 60;
-    std::cout << "Time: " << h << ":" << m << ":" << s;
+    std::cout << "Time: " << h << ":" << m << ":" << s << "\n\n";
 }
 
 
@@ -76,17 +75,14 @@ int main()
 {
     std::cout << "- Ex 1\n";
     task1();   
-    std::cout << "\n";
     std::cout << "- Ex 2\n";
     task2();
-    std::cout << "\n";
     std::cout << "- Ex 3\n";
     task3();   
-    std::cout << "\n";
     std::cout << "- Ex 4\n";
     task4();
-    std::cout << "\n";
     std::cout << "- Ex 5\n";
     task5();
 
 }
+
