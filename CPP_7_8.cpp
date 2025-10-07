@@ -2,25 +2,43 @@
 #include <string>
 #include <iomanip>
 
-using std::cin, std::cout;
+using std::cin, std::cout, std::endl;
 using std::string;
 using std::setprecision, std::fixed;
 
-int main() {
-    int x;
-    int average[3] = {};
-    cin >> x;
+void cpp_7_1() {
+    int repeat;
+    cin >> repeat;
     
-    for (int i = 0; i < x; ++i) {
+    struct Score {
+        int x = 0;
+        int y = 0;
+        int z = 0;
+    };
+    
+    Score score {};
+    
+    for (int i = 0; i < repeat; ++i) {
         string first, second;
-        short x, y, z;
+        int x, y, z;
         cin >> first >> second >> x >> y >> z;
-        average[0] += x;
-        average[1] += y;
-        average[2] += z;
+        score.x += x;
+        score.y += y;
+        score.z += z;
     }
     
-    for (auto& n : average) {
-        cout << fixed << setprecision(1) << float(n) / float(x) << ' ';
-    }
+    cout << fixed << setprecision(1);
+    cout << float(score.x) / float(repeat) << ' ';
+    cout << float(score.y) / float(repeat) << ' ';
+    cout << float(score.z) / float(repeat) << endl;
 }
+
+void cpp_8_1() {
+    
+}
+
+int main() {
+    // cpp_7_1();
+    
+}
+
