@@ -33,9 +33,9 @@ void cpp_7_1() {
     cout << float(score.z) / float(repeat) << endl;
 }
 
-void cpp_8_1() {
-    
-}
+void cpp_8_1() {}
+
+void cpp_8_2() {}
 
 int main() {
     // cpp_7_1();
